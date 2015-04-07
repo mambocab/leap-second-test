@@ -40,7 +40,7 @@ def insert_for_seconds(session, seconds=30):
         if time() - start_time > seconds:
             break
         session.execute(simple_insert, [i, i])
-        sleep(0.05)
+        sleep(0.1)
         if i % 10 == 0:
             print('.', end='')
     print()
